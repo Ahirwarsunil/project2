@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>amazon</title>
     <link rel="stylesheet" href="style/amazon.css" >
+    <link rel="stylesheet" href="style/amazon-mobile.css" >
 </head>
+
 <body>
-    <header>
+    <header class="hdr">
+        
         <div class="nav-bar">
+           
             <div class="nav-belt">
                 <div class="nav-belt-left"> 
-                    <div> 
+                    <div class="nav-logobar"> 
+                        <div class="hamber"> <img src="image/hambur.png" alt="hambur image"> </div>
                         <img src="image/amazonlogo.png" class="nav-logo">
                     </div> 
 
@@ -20,6 +25,7 @@
                         <span class="location"> Update location</span>
                     </div>
                 </div>
+
 
 
                 <div class="nav-belt-middle"> 
@@ -43,49 +49,45 @@
                     </div>
 
                     <div class="nav-cart">
-
-                        <div class="cart-container"> 
-                            <img class="cart-icon" src="image/cart.png">
-                            <a class="cart-count"> 0</a>
-                        </div>
-
-                        <div class="cart-text"> Cart </div>
-
+                        <a class="cart-link header-link" href="checkout.html">
+                            <div class="cart-container"> 
+                                <img class="cart-icon" src="image/cart.png">
+                                <a class="cart-count js-cart-quantity"> 0</a>
+                            </div>
+                            <div class="cart-text"> Cart </div>
+                        </a>
                     </div>
+
                 </div>
+               
             </div>
 
-
-
-            <div class="nav-sprite">
-
-                <div class="nav-left-s">
-                    <i class="hamber"> <img class="hamber-icon" src="image/hambur.png" alt="hamber-icon"> </i>
-                    <span class="hm-all"> All</span>
-                </div>
-    
-    
-                <div class="nav-fill">
-                    <div class="nav-shop">
-                    <a> Fresh</a>
-                    <a> MX player</a>
-                    <a> Sell</a>
-                    <a> Best seller</a>
-                    <a> Today's deal</a>
-                    <a> Mobile</a>
-                    <a> Electronics</a>
-                    <a> Home & kitchen</a>
-                    <a> Prime</a>
-                    <a> Customer service</a>
-                    </div>    
-                </div>
-    
-    
-                <div class="nav-right"> GREAT INDIAN FESTIVAL</div>
-
+            <div class="mob-searchBar">
+                <div class=""> <input class="input-search-m" placeholder="Search in amazon"> </div>
+                <div class="search-icon-m"> <img  class="search-image" src="image/searc.png"> </div>
             </div>
 
+                          
+            <div class="nav-fill">
+                <div class="nav-shop">
+                <a> Fresh</a>
+                <a> MX player</a>
+                <a> Sell</a>
+                <a> Best seller</a>
+                <a> Today's deal</a>
+                <a> Mobile</a>
+                <a> Electronics</a>
+                <a> Home & kitchen</a>
+                <a> Prime</a>
+                <a> Customer service</a>
+                <a> GREAT INDIAN FESTIVAL</a>
+
+
+            </div>
+            
         </div>
+
+       
     </header>
 
     <section class="container" > 
@@ -111,187 +113,14 @@
     </section>
 
     <main>
-        <div class="grid-product">
+        <div class="grid-product js-products-grid " > </div>
 
-            <div class="product-container">
-                <div class="image"><img src="image/lenovo-ideaPad-laptop.jpg" ></div>
-                <div class="p-name"> Lenovo ideapad Laptop | 16 GB RAM | i5 |SSD 256GB </div>
-                <div class="price"> 
-                    <span> ₹ </span> <span> 33990</span><span class="mrp">₹ 50000</span>
-                </div>
-                <div>
-                <img class="rating"  src="image/star.png">
-                <img class="rating"  src="image/star.png">
-                <img class="rating"  src="image/star.png">
-                <span class="star-count"> 2220 </span>
-                <div class="added"> </div>
-                </div>
-                
-                <div class="cart-div">
-                    <input class="add-cart-input"
-                    placeholder="0" type="number">
-                    <button class="add-cart-btn"> Add to cart</button>
-                </div>
-
-            </div>
-
-            <div class="product-container">
-                <div class="image"><img src="image/banq-24inch-monitor.jpg" ></div>
-                <div class="p-name"> Banq 24 Inch monitor | IPS display refresh rate 120 hrz FHD  </div>
-                <div class="price"> 
-                    <span> ₹ </span> <span>9990</span><span class="mrp">₹ 15000</span>
-                </div>
-                <div>
-                    <img class="rating"  src="image/star.png">
-                    <img class="rating"  src="image/star.png">
-                    <span class="star-count"> 20 </span>
-                    <div class="added">  </div>
-                </div>
-                
-                
-                <div class="cart-div">
-                    <input class="add-cart-input"
-                    placeholder="0" type="number">
-                    <button class="add-cart-btn"> Add to cart</button>
-                </div>
-
-            </div>
-
-            <div class="product-container">
-                <div class="image"><img src="image/power-cable.jpg" ></div>
-                <div class="p-name"> Frontech Power cable | three pin | Frequency 50hrz  </div>
-                <div class="price"> 
-                    <span> ₹ </span> <span> 390</span><span class="mrp">₹ 500</span>
-                </div>
-                <div>
-                <img class="rating"  src="image/star.png">
-                <img class="rating"  src="image/star.png">
-                <span class="star-count"> 120 </span>
-                </div>
-                
-                <div class="added"> added </div>
-                <div class="cart-div">
-                    <input class="add-cart-input"
-                    placeholder="0" type="number">
-                    <button class="add-cart-btn"> Add to cart</button>
-                </div>
-
-            </div>
-
-            <div class="product-container">
-                <div class="image"><img src="image/safari-pentagon.jpg" ></div>
-                <div class="p-name"> Safari pentagon Luxury traly bag | 90cm </div>
-                <div class="price"> 
-                    <span> ₹ </span> <span> 1900</span><span class="mrp">₹ 3000</span>
-                </div>
-                <div>
-                    <img class="rating"  src="image/star.png">
-                    <img class="rating"  src="image/star.png">
-                    <span class="star-count"> 320 </span>
-                </div>
-                <div class="added"> added </div>
-                <div class="cart-div">
-                    <input class="add-cart-input"
-                    placeholder="0" type="number">
-                    <button class="add-cart-btn"> Add to cart</button>
-                </div>
-
-            </div>
-
-            <div class="product-container">
-                <div class="image"><img src="image/pen-drive-hp-32gb-579.jpg" ></div>
-                <div class="p-name"> HP pen drive| 32 GB RAM |High speed data read write </div>
-                <div class="price"> 
-                    <span> ₹ </span> <span> 579</span><span class="mrp">₹1000</span>
-                </div>
-                <div>
-                    <img class="rating"  src="image/star.png">
-                    <img class="rating"  src="image/star.png">
-                    <span class="star-count"> 420 </span>
-                </div>
-
-                <div class="added"> added </div>
-
-                <div class="cart-div">
-                    <input class="add-cart-input"
-                    placeholder="0" type="number">
-                    <button class="add-cart-btn"> Add to cart</button>
-                </div>
-
-            </div>
-
-            <div class="product-container">
-                <div class="image"><img src="image/consistent ssd 512 gb 2900.jpg" ></div>
-                <div class="p-name"> Consistent Solid state drive | 512 GB </div>
-                <div class="price"> 
-                    <span> ₹ </span> <span> 2900</span><span class="mrp">₹4000</span>
-                </div>
-                <div>
-                    <img class="rating"  src="image/star.png">
-                    <img class="rating"  src="image/star.png">
-                    <span class="star-count"> 99 </span>
-                </div>
-
-                <div class="added"> added </div>
-
-                <div class="cart-div">
-                    <input class="add-cart-input"
-                    placeholder="0" type="number">
-                    <button class="add-cart-btn"> Add to cart</button>
-                </div>
-
-            </div>
-
-            <div class="product-container">
-                <div class="image"><img src="image/hyperX headphone 3200.jpg" ></div>
-                <div class="p-name"> HyperX headphone | good sound | stereo </div>
-                <div class="price"> 
-                    <span> ₹ </span> <span> 3200</span><span class="mrp">₹5000</span>
-                </div>
-                <div>
-                    <img class="rating"  src="image/star.png">
-                    <img class="rating"  src="image/star.png">
-                    <span class="star-count"> 920 </span>
-                </div>
-
-                <div class="added"> added </div>
-
-                <div class="cart-div">
-                    <input class="add-cart-input"
-                    placeholder="0" type="number">
-                    <button class="add-cart-btn"> Add to cart</button>
-                </div>
-
-            </div>
-
-            <div class="product-container">
-                <div class="image"><img src="image/lenovo-ideaPad-laptop.jpg" ></div>
-                <div class="p-name"> Lenovo ideapad Laptop | 16 GB RAM | i5 |SSD 256GB </div>
-                <div class="price"> 
-                    <span> ₹ </span> <span> 33990</span><span class="mrp">₹50000</span>
-                </div>
-                <div>
-                    <img class="rating"  src="image/star.png">
-                    <img class="rating"  src="image/star.png">
-                    <span class="star-count"> 715 </span>
-                </div>
-                <div class="added"> added </div>
-                <div class="cart-div">
-                    <input class="add-cart-input"
-                    placeholder="0" type="number">
-                    <button class="add-cart-btn"> Add to cart</button>
-                </div>
-
-            </div>
-
-        </div>
-
-
+        <footer class="ftr"> contact </footer>
 
     </main>
 
-
-
+    <script src="data/cart.js"> </script>
+    <script src="data/products.js"></script>
     <script src="scripts/amazon.js"> </script>
 
     </body> 
