@@ -1,32 +1,3 @@
-const products = [{
-    image: "image/lenovo-ideaPad-laptop.jpg",
-    name:'Lenovo ideapad Laptop | 16 GB RAM | i5 |SSD 256GB',
-    rating:{
-        stars:4.5,
-        count:87
-    },
-    pricePaisa:3399000
-},
-
-{
-image:'image/banq-24inch-monitor.jpg',
-name:'Banq 24 Inch monitor | IPS display refresh rate 120 hrz FHD',
-rating:{
-    stars:3,
-    count:127
-},
-pricePaisa:999000
-},
-
-{
-image:'image/power-cable.jpg',
-name:'Frontech Power cable | three pin | Frequency 50hrz',
-rating:{
-    stars:4.5,
-    count:56
-},
-pricePaisa:39000
-}];
 
 let productsHTML = '';
 
@@ -36,7 +7,7 @@ products.forEach((product)=>{
                 <div class="image"> <img src="${product.image}"> </div>
                 <div class="p-name">${product.name}</div>
                 <div class="price"> 
-                    <span> ₹ </span> <span>${product.pricePaisa/100}</span><span class="mrp">${product.mrp/100}</span>
+                    <span> ₹ </span> <span>${product.pricePaisa/100}</span><span class="mrp">MRP-${product.mrp/100}</span>
                 </div>
                 <div>
                 <img class="rating"  src="image/rating-${product.rating.stars * 10 }.png">
