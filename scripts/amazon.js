@@ -1,4 +1,5 @@
 
+
 let productsHTML = '';
 
 products.forEach((product)=>{
@@ -9,9 +10,10 @@ products.forEach((product)=>{
                 <div class="price"> 
                     <span> ₹ </span> <span>${product.pricePaisa/100}</span><span class="mrp">MRP-${product.mrp/100}</span>
                 </div>
+
                 <div>
                 <img class="rating"  src="image/rating-${product.rating.stars * 10 }.png">
-
+                
                 <span class="star-count"> ${product.rating.count} </span>
                 <div class="added"> </div>
                 </div>
